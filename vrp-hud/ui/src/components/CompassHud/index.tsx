@@ -22,15 +22,14 @@ export const CompassHud = () => {
       {compassHud.active && compassHud.show && (
         <div className="w-min mx-auto">
           <div className="flex relative justify-center gap-2">
-	   <div className="background">
             <div className="street1">
-              <h1 className="text-white font-semibold whitespace-nowrap">
+              <h1 className="text-yellow font-semibold whitespace-nowrap">
                 {compassHud?.crossRoad?.street1}
               </h1>
             </div>
             <div className="direction relative flex justify-center px-2">
-              <div className="triangle-bottom absolute z-50"></div>
-              <div className="relative m-[0_auto] font-medium text-white w-[240px]">
+              <div className="diamond-bottom absolute z-50"></div>
+              <div className="relative m-[0_auto] font-medium text-yellow w-[240px]">
                 <svg className="directions transition-transform h-6 w-full">
                   <text x="0" y="4.5" fill="white" textAnchor="middle">
                     N
@@ -113,12 +112,11 @@ export const CompassHud = () => {
               </div>
             </div>
             <div className="street2">
-              <h1 className="text-white font-semibold whitespace-nowrap">
+              <h1 className="text-yellow font-semibold whitespace-nowrap">
                 {compassHud?.crossRoad?.street2}
               </h1>
             </div>
           </div>
-        </div>
       </div> 
       )}
     </>
